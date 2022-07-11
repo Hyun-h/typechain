@@ -1,6 +1,7 @@
 {
   "include": ["src"],
   "compilerOptions": {
+    //outDir로 밑에 처럼 설정 -> package.json에서 script 안에 "build": "tsc" -> build 폴더 안에 index.js 가 짜잔!
     "outDir": "build",
     //자바스크립트 버전 설정
     "target": "ES6",
