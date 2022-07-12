@@ -8,10 +8,14 @@
     //"lib" : 자바스크립트 어떤 버전이 어떤 환경 에서 동작할 지 알려줌
     //es6를 지원하는 서버와 DOM(브라우저) 환경에서 코드 실행
     //"DOM"이 없으면 타입스크립트가 서버 프로젝트 돌리는 걸로 인식
-    "lib": ["ES6", "DOM"],
+    //"lib": ["ES6", "DOM"],
+    "lib": ["ES6"],
     //규칙을 엄격하게 적용
     "strict": true,
-    //정의파일 없이 쓰거나 JS와 프로젝트가 혼합되어 있을 경우 JS와 같이 쓰는 걸 허용.
-    "allowJs": true
+    //정의파일 없이 쓰거나 JS와 프로젝트가 혼합되어 있을 경우 JS와 같이 쓰는 걸 허용. "allowJs": true
+
+    //esModuleInterop를 써야 import * as 없이 CommonJS 모듈을 가져올 수 있음
+    "esModuleInterop": true,
+    "module": "CommonJs"
   }
 }
